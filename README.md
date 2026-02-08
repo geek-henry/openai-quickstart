@@ -37,7 +37,7 @@ git clone https://github.com/DjangoPeng/openai-quickstart.git
 
 ## 搭建开发环境
 
-本项目使用 Python v3.10 开发，完整 Python 依赖软件包见[requirements.txt](requirements.txt)。
+本项目使用 Python v3.12 开发，完整 Python 依赖软件包见[requirements.txt](requirements.txt)。
 
 关键依赖的官方文档如下：
 
@@ -61,10 +61,21 @@ rm -rf ~/miniconda3/miniconda.sh
 安装完成后，建议新建一个 Python 虚拟环境，命名为 `langchain`。
 
 ```shell
-conda create -n langchain python=3.10
+conda create -n langchain python=3.12
 
 # 激活环境
-conda activate langchain 
+conda activate langchain
+```
+
+或者使用 Python 内置的 venv：
+
+```shell
+python3.12 -m venv venv
+
+# 激活环境
+source venv/bin/activate  # macOS/Linux
+# 或
+venv\Scripts\activate  # Windows
 ```
 
 之后每次使用需要激活此环境。

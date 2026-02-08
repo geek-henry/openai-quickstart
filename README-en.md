@@ -39,7 +39,7 @@ Then navigate to the directory and follow the individual module instructions to 
 
 ## Setting Up the Development Environment
 
-This project is developed using Python v3.10. For a complete list of Python dependency packages, see [requirements.txt](requirements.txt).
+This project is developed using Python v3.12. For a complete list of Python dependency packages, see [requirements.txt](requirements.txt).
 
 Official documentation for key dependencies is as follows:
 
@@ -63,10 +63,21 @@ rm -rf ~/miniconda3/miniconda.sh
 After installation, it is recommended to create a new Python virtual environment named `langchain`.
 
 ```shell
-conda create -n langchain python=3.10
+conda create -n langchain python=3.12
 
 # Activate the environment
-conda activate langchain 
+conda activate langchain
+```
+
+Alternatively, you can use Python's built-in venv:
+
+```shell
+python3.12 -m venv venv
+
+# Activate the environment
+source venv/bin/activate  # On macOS/Linux
+# or
+venv\Scripts\activate  # On Windows
 ```
 
 This environment needs to be activated each time before use.
